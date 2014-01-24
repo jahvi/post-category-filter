@@ -43,5 +43,8 @@ This plugins allows you to quickly filter post categories as you type.
 
 == Changelog ==
 
+= 1.0.1 =
+* Remove assets folder from plugin folder
+
 = 1.0.0 =
 * First version
