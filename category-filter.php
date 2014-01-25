@@ -14,7 +14,7 @@
  * Plugin Name:       Post Category Filter
  * Plugin URI:        http://www.jahvi.com
  * Description:       Filter post categories and taxonomies live in the WordPress admin area
- * Version:           1.1.0
+ * Version:           1.2.0
  * Author:            Javier Villanueva
  * Author URI:        http://www.jahvi.com
  * Text Domain:       post-category-filter
@@ -29,18 +29,12 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 /*----------------------------------------------------------------------------*
- * Public-Facing Functionality
- *----------------------------------------------------------------------------*/
-
-require_once( plugin_dir_path( __FILE__ ) . 'public/class-category-filter.php' );
-
-/*----------------------------------------------------------------------------*
  * Dashboard and Administrative Functionality
  *----------------------------------------------------------------------------*/
 
 if ( is_admin() && ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX ) ) {
 
-    require_once( plugin_dir_path( __FILE__ ) . 'admin/class-category-filter-admin.php' );
-    add_action( 'plugins_loaded', array( 'Post_Category_Filter_Admin', 'get_instance' ) );
+    require_once( plugin_dir_path( __FILE__ ) . 'class-category-filter.php' );
+    add_action( 'plugins_loaded', array( 'Post_Category_Filter', 'get_instance' ) );
 
 }
