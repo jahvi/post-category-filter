@@ -2,7 +2,7 @@
 Tags: filter, category, categories, taxonomy, taxonomies, post
 Requires at least: 3.5.0
 Tested up to: 3.8.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -10,7 +10,16 @@ Filter post categories and taxonomies live in the WordPress admin area
 
 == Description ==
 
-This plugins allows you to quickly filter post categories as you type.
+Post Category Filter allows you to filter through your post categories and custom
+taxonomies by adding a search box on top of the term lists.
+
+The lists will update live as you type with only the relevant results based on your
+search query.
+
+= Want to contribute? =
+
+You can follow the [Github repository](https://github.com/jahvi/post-category-filter)
+and submit issues or pull requests.
 
 == Installation ==
 
@@ -36,12 +45,25 @@ This plugins allows you to quickly filter post categories as you type.
 3. Upload the `admin-category-filter` directory to the `/wp-content/plugins/` directory
 4. Activate the plugin in the Plugin dashboard
 
+== Frequently Asked Questions ==
+
+= Does it work with custom taxonomies? =
+
+Yes.
+
+= Does it work with custom post types? =
+
+Yes.
+
 == Screenshots ==
 
 1. Regular filter view
 2. Filtered results
 
 == Changelog ==
+
+= 1.0.2 =
+* Update readme
 
 = 1.0.1 =
 * Remove assets folder from plugin folder
