@@ -1,12 +1,12 @@
 (function ( $ ) {
 
-	'use strict';
+    'use strict';
 
-	$(function () {
+    $(function () {
 
         var $categoryDivs = $('.categorydiv');
 
-		$categoryDivs
+        $categoryDivs
             .prepend('<input type="search" class="fc-search-field" placeholder="' + fc_plugin.placeholder + '" style="width: 100%" />');
 
         $categoryDivs.on('keyup search', '.fc-search-field', function (event) {
@@ -28,6 +28,6 @@
 
         });
 
-	});
+    });
 
 }(jQuery));
