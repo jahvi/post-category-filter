@@ -43,7 +43,6 @@ and submit issues or pull requests.
 3. Upload the `admin-category-filter` directory to the `/wp-content/plugins/` directory
 4. Activate the plugin in the Plugin dashboard
 
-<<<<<<< HEAD
 == Frequently Asked Questions ==
 
 = Does it work with custom taxonomies? =
@@ -54,8 +53,6 @@ Yes.
 
 Yes.
 
-=======
->>>>>>> Initial commit
 == Screenshots ==
 
 1. Regular filter view
@@ -63,8 +60,6 @@ Yes.
 
 == Changelog ==
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 = 1.1.0 =
 * Add support for custom post types
 
@@ -74,12 +69,5 @@ Yes.
 = 1.0.1 =
 * Remove assets folder from plugin folder
 
-=======
->>>>>>> Initial commit
-=======
-= 1.0.1 =
-* Remove assets folder from plugin folder
-
->>>>>>> Update changelog
 = 1.0.0 =
 * First version
