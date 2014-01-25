@@ -67,7 +67,7 @@ class Post_Category_Filter_Admin {
 	public function enqueue_admin_scripts() {
 		$screen = get_current_screen();
 
-		if ( 'post' === $screen->id ) {
+		if ( 'post' === $screen->base ) {
 			wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'assets/js/admin.js', __FILE__ ), array( 'jquery' ), Post_Category_Filter::VERSION, true );
 			wp_localize_script( $this->plugin_slug . '-admin-script', 'fc_plugin', $this->get_language_strings() );
 		}
