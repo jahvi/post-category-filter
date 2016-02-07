@@ -6,7 +6,7 @@
  * @author    Javier Villanueva <hi@jahvi.com>
  * @license   GPL-2.0+
  * @link      http://www.jahvi.com
- * @copyright 2014 Javier Villanueva
+ * @copyright 2016 Javier Villanueva
  */
 
 class Post_Category_Filter {
