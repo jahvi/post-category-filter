@@ -60,6 +60,9 @@ Yes.
 
 == Changelog ==
 
+= 1.2.6 =
+* Update for WordPress 4.5
+
 = 1.2.5 =
 * Update for WordPress 4.4
 
