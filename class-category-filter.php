@@ -18,7 +18,7 @@ class Post_Category_Filter {
      *
      * @var     string
      */
-    const VERSION = '1.2.6';
+    const VERSION = '1.2.7';
 
     /**
      * Unique identifier for your plugin.
