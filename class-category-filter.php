@@ -6,7 +6,7 @@
  * @author    Javier Villanueva <hi@jahvi.com>
  * @license   GPL-2.0+
  * @link      http://www.jahvi.com
- * @copyright 2016 Javier Villanueva
+ * @copyright 2014 Javier Villanueva
  */
 
 class Post_Category_Filter {
@@ -49,13 +49,11 @@ class Post_Category_Filter {
      * @since     1.0.0
      */
     private function __construct() {
-
-        // Load plugin text domain
-        add_action( 'init', array( $this, 'load_plugin_textdomain' ) );
+        // Load plugin text domain.
+        add_action( 'init', array( $this, 'load_plugin_i18n' ) );
 
         // Load admin JavaScript.
         add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_scripts' ) );
-
     }
 
     /**
@@ -66,7 +64,6 @@ class Post_Category_Filter {
      * @return    Post_Category_Filter    A single instance of this class.
      */
     public static function get_instance() {
-
         // If the single instance hasn't been set, set it now.
         if ( null === self::$instance ) {
             self::$instance = new self;
@@ -80,13 +77,8 @@ class Post_Category_Filter {
      *
      * @since    1.0.0
      */
-    public function load_plugin_textdomain() {
-
-        $domain = $this->plugin_slug;
-        $locale = apply_filters( 'plugin_locale', get_locale(), $domain );
-
-        load_textdomain( $domain, dirname( __FILE__ ) . '/languages/' . $domain . '-' . $locale . '.mo' );
-
+    public function load_plugin_i18n() {
+        load_plugin_textdomain( $this->plugin_slug, false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
     }
 
     /**
@@ -114,7 +106,7 @@ class Post_Category_Filter {
      */
     public function get_language_strings() {
         return array(
-            'placeholder' => __( 'Filter Categories', $this->plugin_slug )
+            'placeholder' => __( 'Filter Categories', 'post-category-filter' )
         );
     }
 
