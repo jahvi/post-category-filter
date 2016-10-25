@@ -50,7 +50,7 @@ class Post_Category_Filter {
      */
     private function __construct() {
         // Load plugin text domain.
-        add_action( 'init', array( $this, 'load_plugin_i18n' ) );
+        add_action( 'plugins_loaded', array( $this, 'load_plugin_i18n' ) );
 
         // Load admin JavaScript.
         add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_scripts' ) );
@@ -78,7 +78,7 @@ class Post_Category_Filter {
      * @since    1.0.0
      */
     public function load_plugin_i18n() {
-        load_plugin_textdomain( $this->plugin_slug, false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+        load_plugin_textdomain( $this->plugin_slug, false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
     }
 
     /**
