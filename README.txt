@@ -1,8 +1,8 @@
 === Post Category Filter ===
 Tags: filter, category, categories, taxonomy, taxonomies, post
 Requires at least: 3.5.0
-Tested up to: 4.6
-Stable tag: 1.2.9
+Tested up to: 4.7
+Stable tag: 1.2.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -59,6 +59,9 @@ Yes.
 2. Filtered results
 
 == Changelog ==
+
+= 1.2.9 =
+* Update for WordPress 4.7
 
 = 1.2.9 =
 * Small fixes to translations functions
