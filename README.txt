@@ -2,7 +2,7 @@
 Tags: filter, category, categories, taxonomy, taxonomies, post
 Requires at least: 3.5.0
 Tested up to: 4.7
-Stable tag: 1.2.10
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,7 +60,10 @@ Yes.
 
 == Changelog ==
 
-= 1.2.9 =
+= 1.3.0 =
+* Change text domain to match plugin slug
+
+= 1.2.10 =
 * Update for WordPress 4.7
 
 = 1.2.9 =

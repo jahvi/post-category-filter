@@ -14,10 +14,10 @@
  * Plugin Name:       Post Category Filter
  * Plugin URI:        http://www.jahvi.com
  * Description:       Filter post categories and taxonomies live in the WordPress admin area
- * Version:           1.2.10
+ * Version:           1.3.0
  * Author:            Javier Villanueva
  * Author URI:        http://www.jahvi.com
- * Text Domain:       post-category-filter
+ * Text Domain:       admin-category-filter
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Domain Path:       /languages

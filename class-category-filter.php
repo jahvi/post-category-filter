@@ -18,7 +18,7 @@ class Post_Category_Filter {
      *
      * @var     string
      */
-    const VERSION = '1.2.10';
+    const VERSION = '1.3.0';
 
     /**
      * Unique identifier for your plugin.
@@ -31,7 +31,7 @@ class Post_Category_Filter {
      *
      * @var      string
      */
-    protected $plugin_slug = 'post-category-filter';
+    protected $plugin_slug = 'admin-category-filter';
 
     /**
      * Instance of this class.
@@ -106,7 +106,7 @@ class Post_Category_Filter {
      */
     public function get_language_strings() {
         return array(
-            'placeholder' => __( 'Filter Categories', 'post-category-filter' )
+            'placeholder' => __( 'Filter Categories', 'admin-category-filter' )
         );
     }
 
