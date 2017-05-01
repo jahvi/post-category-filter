@@ -10,14 +10,11 @@ Filter post categories and taxonomies live in the WordPress admin area
 
 == Description ==
 
-Post Category Filter allows you to filter through your post categories and custom
-taxonomies by adding a search box on top of the term lists. The lists will update
-live as you type with only the relevant results based on your search query.
+Post Category Filter allows you to filter through your post categories and custom taxonomies by adding a search box on top of the term lists. The lists will update live as you type with only the relevant results based on your search query.
 
 = Want to contribute? =
 
-You can follow the [Github repository](https://github.com/jahvi/post-category-filter)
-and submit issues or pull requests.
+You can follow the [Github repository](https://github.com/jahvi/post-category-filter) and submit issues or pull requests.
 
 == Installation ==
 
