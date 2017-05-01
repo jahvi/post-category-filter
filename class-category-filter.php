@@ -86,27 +86,29 @@ class Post_Category_Filter {
      *
      * @since     1.0.0
      *
-     * @return    null    Return early if no settings page is registered.
+     * @param     string  $screen  The admin screen name
+     * @return    null             Return early if no settings page is registered.
      */
-    public function enqueue_admin_scripts() {
-        $screen = get_current_screen();
-
-        if ( 'post' === $screen->base ) {
+    public function enqueue_admin_scripts( $screen ) {
+        if ( 'post.php' === $screen || 'edit.php' === $screen ) {
             wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'js/admin.js', __FILE__ ), array( 'jquery' ), self::VERSION, true );
-            wp_localize_script( $this->plugin_slug . '-admin-script', 'fc_plugin', $this->get_language_strings() );
+            wp_localize_script( $this->plugin_slug . '-admin-script', 'fc_plugin', $this->get_plugin_settings() );
         }
     }
 
     /**
-     * Get translation strings
+     * Get JS accessible settings
      *
      * @since     1.0.0
      *
-     * @return    array    Translatable strings
+     * @return    array    Plugin settings strings
      */
-    public function get_language_strings() {
+    public function get_plugin_settings() {
+        $screen = get_current_screen();
+
         return array(
-            'placeholder' => __( 'Filter Categories', 'admin-category-filter' )
+            'placeholder' => __( 'Filter Categories', 'admin-category-filter' ),
+            'screenName'  => $screen->base
         );
     }
 
