@@ -90,7 +90,9 @@ class Post_Category_Filter {
      * @return    null             Return early if no settings page is registered.
      */
     public function enqueue_admin_scripts( $screen ) {
-        if ( 'post.php' === $screen || 'edit.php' === $screen ) {
+        $screen = get_current_screen();
+
+        if ( 'post' === $screen->base || 'edit' === $screen->base ) {
             wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'js/admin.js', __FILE__ ), array( 'jquery' ), self::VERSION, true );
             wp_localize_script( $this->plugin_slug . '-admin-script', 'fc_plugin', $this->get_plugin_settings() );
         }
