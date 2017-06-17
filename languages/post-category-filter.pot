@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Post Category Filter package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Post Category Filter 1.5.1\n"
+"Project-Id-Version: Post Category Filter 1.6.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/post-category-filter\n"
 "POT-Creation-Date: 2017-06-17 10:22:02+00:00\n"
 "MIME-Version: 1.0\n"
